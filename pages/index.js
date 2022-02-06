@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Banner from "../components/Banner";
+import Card from "../components/Card";
 
 import styles from "../styles/Home.module.css";
 
@@ -22,6 +23,35 @@ export default function Home() {
           handleOnClick={handleOnBannerClick}
           buttonText="View Stores Nearby"
         />
+        <div className={styles.heroImage}>
+          <Image
+            src="/static/hero-bg.png"
+            width={714}
+            height={300}
+            alt="coffee"
+          />
+        </div>
+
+        <div className={styles.cardLayout}>
+          <Card
+            className={styles.card}
+            name="Darkhorse Coffee"
+            imgUrl="/static/hero-bg.png"
+            href="/coffee-store/darkhouse-coffee"
+          />
+          <Card
+            className={styles.card}
+            name="Darkhorse Coffee"
+            imgUrl="/static/hero-bg.png"
+            href="/coffee-store/darkhouse-coffee"
+          />
+          <Card
+            className={styles.card}
+            name="Darkhorse Coffee"
+            imgUrl="/static/hero-bg.png"
+            href="/coffee-store/darkhouse-coffee"
+          />
+        </div>
       </main>
     </div>
   );
