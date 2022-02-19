@@ -34,7 +34,7 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   background: url("/static/gradient-bg-2.png") 50% / cover no-repeat;
-  color: #373b64;
+  color: var(--color-primary-dark);
 }
 
 a {
